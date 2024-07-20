@@ -1,0 +1,572 @@
+/** __________ Importation des typos __________ **/
+
+@import url("https://use.typekit.net/ttg6lsa.css");
+
+/** __________ Déclaration des variables de style __________ **/
+
+:root {
+    /* --- Spécifique --- */
+    --fond_sombre: #001724; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
+    --fond_moyen: #001E35; /* Idem */
+    --fond_clair: #032942; /* Idem */
+    --texte : #000000; /* Idem */
+    --texte_sur_fond_sombre : #FFFFFF; /* Idem */
+    --accentuation: #FF6357; /* Idem */
+    
+    /* --- Couleurs --- */
+    --blanc: #FFFFFF;
+    --noir: #000000;
+}
+
+/** __________ Style généraux __________ **/
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: var(--texte);
+    font-family: area-normal;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+h1, h2, h3, p, label, summary, figcaption {
+    margin: 0;
+    color: inherit;
+    text-align: left;
+}
+
+h1 {
+    padding: 2rem 0 1rem 0;
+    font-size: 3.75rem;
+    font-weight: 600;
+    font-style: normal;
+}
+h2 {
+    padding: 2rem 0 1rem 0;
+    font-size: 3rem;
+    font-weight: 100;
+    font-style: normal;
+}
+h3 {
+    padding: 1.4rem 0 0.8rem 0;
+    font-size: 3rem;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--accentuation);
+}
+p, label, summary, figcaption {
+    padding: 0.7rem 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+span {
+    font-size: inherit;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=range] {
+    height: 2px;
+    background-color: var(--blanc);
+    appearance: none;
+    cursor: pointer;
+}
+
+::-webkit-slider-thumb {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--fond_sombre);
+    border: 1px solid var(--accentuation);
+    border-radius: 100%;
+    appearance: none;
+}
+
+::-webkit-slider-thumb:hover {
+    border-width: 2px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    height: 100%;
+    width: 100%;
+}
+
+img.height {
+    height: 100%;
+}
+
+img.width {
+    width: 100%;
+    height: 12vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+}
+
+.fond_sombre {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+}
+
+.fond_moyen {
+    background-color: var(--fond_moyen);
+    color: var(--texte_sur_fond_sombre);
+}
+
+.fond_clair {
+    background-color: var(--fond_clair);
+    color: var(--texte_sur_fond_sombre);
+}
+
+
+
+/** __________ Style des pages accueil, connexion et paramètres de l'application __________ **/
+
+/* --- Style de la page index.php --- */
+
+a.Info {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+button.Info {
+    width: 2rem;
+    height: 2rem;
+}
+
+div.accueil_centre {
+    height: 100%;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+div.flex_colonne {
+    height: calc(100% - 20vh);
+    width: 100%;
+    padding: 10vh 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div.bandeau_superieur {
+    justify-content: center;
+}
+
+div.hover_decoration {
+    justify-content: center;
+}
+
+div.hover_decoration hr {
+    width: 30px;
+    display: none;
+}
+
+div.hover_decoration:hover hr {
+    display: block;
+}
+
+div.hover_decoration:hover h1, div.hover_decoration:hover p {
+    margin: 0 10px;
+}
+
+/* --- Style de inscription et connexion --- */
+
+.formulaires {
+    text-align: center;
+}
+
+/* --- Style de la page accueil.php et des menus menu_logged.php et menu_guest.php --- */
+
+main.accueil {
+    height: 100%;
+    width: 85%;
+}
+
+aside.menu {
+    height: 100%;
+    width: 15%;
+    min-width: 80px;
+    align-items: unset;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+aside.menu figure.eho {
+    height: 7rem;
+    width: 7rem;
+    max-width: 80%;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+aside.menu p {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-bottom: 1px solid var(--blanc);
+    cursor: pointer;
+}
+
+aside.menu p:hover {
+    border-bottom-color: var(--accentuation);
+    color: var(--accentuation);
+}
+
+nav {
+    padding: 1rem;
+    border-bottom: 2px solid var(--blanc);
+}
+
+nav.accueil {
+    padding: 3px 1rem;
+}
+
+nav figure.eho {
+    height: 50px;
+    width: 7rem;
+}
+
+nav figure.profil {
+    height: 50px;
+    width: 50px;
+}
+
+nav figure.profil:hover {
+    filter: brightness(0) invert(1);
+}
+
+/** __________ compte, sauvegardes et parametres __________ **/
+
+/* --- compte --- */
+
+.gestioncompte {
+    background-color: var(--fond_clair);
+    height: 89%;
+}
+
+.compteTexte {
+
+}
+.compteButton {
+
+}
+
+.noAccount {
+    margin-left: 5%;
+}
+
+/* --- sauvegarde --- */
+
+section.sauvegardes > div {
+    padding: 1px 1rem;
+    cursor: pointer;
+}
+
+section.sauvegardes > div:hover {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px var(--accentuation);
+    border-style: solid none solid none;
+    color: var(--accentuation);
+}
+
+section.sauvegardes > div:nth-child(odd) {
+    background: var(--fond_moyen);
+}
+
+section.sauvegardes > div:nth-child(even) {
+    background: var(--fond_clair);
+}
+
+/* --- parametres --- */
+
+.parametrage{
+    background-color: var(--fond_clair);
+    height: 89%;
+}
+dl {
+    margin-left: 5%;
+}
+
+/** __________ Style du jeu __________ **/
+
+/* --- Style de la page jeu.php --- */
+
+main.jeu {
+    transform: translateY(25%);
+}
+
+main.jeu h2 {
+    margin-bottom: 5rem;
+}
+
+div.selection {
+    width: 60%;
+    margin: auto;
+}
+
+div.selection .curseur {
+    width: 322px;
+    margin: 2rem auto auto auto;
+}
+
+div.selection .curseur input {
+    width: 100%;
+}
+
+div.selection .curseur > div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--blanc);
+    cursor: pointer;
+}
+
+div.selection .images figure {
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+div.selection .images figure:hover {
+    background-color: var(--fond_moyen);
+}
+
+div.selection .images figure img {
+    height: 200px;
+    width: 200px;
+}
+
+div.selection .images figure.selected {
+    background-color: var(--fond_clair);
+}
+
+div.selection .images figure.selected figcaption {
+    color: var(--accentuation);
+}
+
+div.selection .bouton {
+    width: fit-content;
+    margin: 2rem auto auto auto;
+}
+
+div.menu {
+    align-items: flex-start;
+}
+
+/* ___ Style des vues maison et piece et simulation ___ */
+
+div.fond_sombre {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+    height: 100%;
+    width: 80%;
+}
+
+div#content>h1 {
+    text-align: center;
+}
+
+#sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: width 0.3s ease;
+}
+
+#sidebar.collapsed {
+    width: 0;
+    padding: 20px 0;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #ccc;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.room {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* --- Style maison --- */
+
+.maison{
+
+}
+
+div.visualisation {
+    position: absolute;
+    width: 75%;
+    bottom: 20px;
+}
+a.visualisation {
+    text-align: center;
+}
+button.visualisation {
+    width: 20%;
+}
+
+a.imagepiece {
+    height: 100%;
+}
+img.imagepiece {
+    height: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* --- Style pièce --- */
+
+.piece{
+
+}
+
+img.imageappareil {
+    /*height: 40%;*/
+    position: absolute;
+    bottom: 30;
+}
+/*img.imageplafonnier {
+    height: 40%;
+    position: absolute;
+    top: 20;
+}*/
+
+/* --- Style simulation --- */
+
+
+
+/** __________ Style visualisation __________ **/
+
+.menuvisu {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.menuvisu>button, .menuvisu>figure {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+div.visu {
+    text-align: center;
+    margin-left: 1px;
+    height: 100%;
+    width: 89%;
+}
+main.visu{
+    /*height: 100%;*/
+    width: 85%;
+}
+
+.titrevisu{
+    padding-left: 10px;
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+}
+
+main.graphe {
+    background-color: var(--fond_clair);
+    color: var(--texte_sur_fond_sombre);
+    height: 89%;
+}
+div.graphe {
+    display: flex;
+    padding: 1px;
+    width: 50%;
+}
+canvas.graphe {
+    
+}
+
+div.retour {
+    position: absolute;
+    bottom: 20px;
+    width: 15%;
+}
+
+/** __________ Déclaration des Media Queries __________ **/
+
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    main.jeu {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    figure.vide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    nav.accueil {
+        flex-direction: column-reverse;
+        padding: 1.5rem 1rem;
+    }
+    div.selection .images {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    div.selection .curseur {
+        display: none;
+    }
+}
