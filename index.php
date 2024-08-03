@@ -2,23 +2,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>eHo - Configurez, Visualisez, Économisez !</title>
+        <title>Configurez, Visualisez, Économisez !</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
     </head>
     <body class="fond_sombre">
 
-        <aside id="news">
-            <div></div>
-        </aside>
-
         <div class="accueil_centre">
             <div class="flex flex_colonne">
-                <a class="Info" href="https://esteam.mmi-velizy.fr/"><button class="Info">I</button></a>
 
                 <div class="flex bandeau_superieur">
                     <a href="./">
-                        <img class="width" src="assets/img/logo_left.svg" alt="Logo de l'application eHo">
+                        <img class="width" src="assets/img/logo_left.svg">
                     </a>
                 </div>
                 <div class="flex hover_decoration">
@@ -50,10 +45,6 @@
                 </div>
             </div>
         </div>
-
-        <aside id="updates">
-            <div></div>
-        </aside>
 
     </body>
 </html>

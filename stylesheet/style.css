@@ -6,12 +6,12 @@
 
 :root {
     /* --- Spécifique --- */
-    --fond_sombre: #001724; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
-    --fond_moyen: #001E35; /* Idem */
-    --fond_clair: #032942; /* Idem */
+    --fond_sombre: #000000; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
+    --fond_moyen: #a0a0a0; /* Idem */
+    --fond_clair: #ffffff; /* Idem */
     --texte : #000000; /* Idem */
     --texte_sur_fond_sombre : #FFFFFF; /* Idem */
-    --accentuation: #FF6357; /* Idem */
+    --accentuation: #ff0000; /* Idem */
     
     /* --- Couleurs --- */
     --blanc: #FFFFFF;

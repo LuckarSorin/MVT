@@ -1,5 +1,5 @@
 <main class="jeu">
-    <h2 class="center">Pour commencer, sélectionne ton habitation</h2>
+    <h2 class="center">Pour commencer, sélectionne ton type de logement</h2>
     <section>
         <div class="selection">
             <div class="flex images">
